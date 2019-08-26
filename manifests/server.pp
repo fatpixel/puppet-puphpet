@@ -3,7 +3,8 @@ class puphpet::server {
   include ::puphpet::params
   include ::git
   include ::ntp
-  include ::swap_file
+  # Commenting out the swap file as it is managed through other means.
+  # include ::swap_file
 
   $server = $puphpet::params::hiera['server']
 
